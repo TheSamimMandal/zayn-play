@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Zayn Play provider tabs + bundled repositories. All Zayn strings live here; values/strings.xml is untouched. -->
+    <string name="zayn_provider_tabs_all">All providers</string>
+    <string name="zayn_provider_tabs_empty">No providers turned on yet</string>
+    <string name="zayn_provider_tabs_empty_hint">Turn providers ON in Extensions to see them here</string>
+    <string name="zayn_provider_tabs_pinned">Pinned</string>
+    <string name="zayn_provider_tabs_unpinned">Unpinned</string>
+    <string name="zayn_repos_title">Zayn repositories</string>
+    <string name="zayn_repos_search_hint">Search repositories or providers…</string>
+    <string name="zayn_repos_install">Install</string>
+    <string name="zayn_repos_installed">Installed</string>
+    <string name="zayn_repos_installing">Installing…</string>
+    <string name="zayn_repos_test">Test</string>
+    <string name="zayn_repos_testing">Testing…</string>
+    <string name="zayn_repos_providers">providers</string>
+    <string name="zayn_repos_on">on</string>
+    <string name="zayn_repos_show_providers">Show providers</string>
+    <string name="zayn_repos_hide_providers">Hide providers</string>
+    <string name="zayn_repos_enable_all">All on</string>
+    <string name="zayn_repos_disable_all">All off</string>
+    <string name="zayn_repos_install_ok">Repository installed, downloading providers…</string>
+    <string name="zayn_repos_install_fail">Could not install this repository</string>
+    <string name="zayn_repos_test_ok">Repository reachable: %1$d providers found</string>
+    <string name="zayn_repos_test_fail">Repository could not be reached</string>
+    <string name="zayn_provider_enabled">Provider turned on</string>
+    <string name="zayn_provider_disabled">Provider turned off</string>
+    <string name="zayn_add_site">Add site</string>
+</resources>
