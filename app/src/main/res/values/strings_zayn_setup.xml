@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Zayn Play additions: setup profile step, Nuvio Smart-Streams, player choice,
+     Test-all-providers. ALL new strings live here; values/strings.xml is untouched.
+     The SharedPreferences keys themselves are literal strings (see ZaynProfile /
+     ZaynSmartStreams consts) so another agent can read them verbatim:
+     zayn_profile_name, zayn_profile_avatar, zayn_stream_mode, zayn_pref_resolution,
+     zayn_audio_primary, zayn_audio_secondary, zayn_stream_timeout,
+     zayn_reuse_last_link, zayn_player_choice, zayn_external_player,
+     zayn_enabled_providers, zayn_last_link_<title-hash>. -->
+<resources>
+    <!-- Setup: Profile step -->
+    <string name="zayn_setup_profile_title">Your profile</string>
+    <string name="zayn_setup_profile_name_label">Your name</string>
+    <string name="zayn_setup_profile_name_hint">e.g. Samim</string>
+    <string name="zayn_setup_profile_avatar_label">Choose a picture</string>
+    <string name="zayn_setup_profile_upload_photo">Upload your own photo</string>
+    <string name="zayn_setup_profile_preview">Preview</string>
+    <string name="zayn_setup_profile_photo_saved">Photo saved</string>
+    <string name="zayn_setup_profile_photo_failed">Could not save that photo</string>
+
+    <!-- Settings > Player: Nuvio Smart-Streams -->
+    <string name="zayn_smart_streams_category">Smart-Streams (Nuvio)</string>
+    <string name="zayn_stream_mode_title">Stream mode</string>
+    <string name="zayn_stream_mode_summary">Auto picks the best server, Manual lets you pick</string>
+    <string name="zayn_stream_mode_auto">Auto (best server)</string>
+    <string name="zayn_stream_mode_manual">Manual (pick a server)</string>
+    <string name="zayn_pref_resolution_title">Preferred resolution</string>
+    <string name="zayn_pref_resolution_auto">Auto</string>
+    <string name="zayn_audio_primary_title">Preferred audio language</string>
+    <string name="zayn_audio_secondary_title">Second audio language</string>
+    <string name="zayn_audio_none">None</string>
+    <string name="zayn_stream_timeout_title">Source search timeout</string>
+    <string name="zayn_stream_timeout_summary">How long to wait for servers before giving up</string>
+    <string name="zayn_stream_timeout_instant">Instant (fail fast)</string>
+    <string name="zayn_stream_timeout_unlimited">No limit</string>
+    <string name="zayn_stream_timeout_seconds">%1$s seconds</string>
+    <string name="zayn_reuse_last_link_title">Reuse last working link</string>
+    <string name="zayn_reuse_last_link_summary">Prefer the link that worked last time for the same title</string>
+    <string name="zayn_on">On</string>
+    <string name="zayn_off">Off</string>
+
+    <string-array name="zayn_stream_mode_names">
+        <item>@string/zayn_stream_mode_auto</item>
+        <item>@string/zayn_stream_mode_manual</item>
+    </string-array>
+    <string-array name="zayn_stream_mode_values">
+        <item>auto</item>
+        <item>manual</item>
+    </string-array>
+    <string-array name="zayn_pref_resolution_names">
+        <item>@string/zayn_pref_resolution_auto</item>
+        <item>1080p</item>
+        <item>720p</item>
+        <item>480p</item>
+        <item>360p</item>
+    </string-array>
+    <string-array name="zayn_pref_resolution_values">
+        <item>auto</item>
+        <item>1080</item>
+        <item>720</item>
+        <item>480</item>
+        <item>360</item>
+    </string-array>
+    <string-array name="zayn_stream_timeout_names">
+        <item>@string/zayn_stream_timeout_instant</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>@string/zayn_stream_timeout_unlimited</item>
+    </string-array>
+    <string-array name="zayn_stream_timeout_values">
+        <item>instant</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>unlimited</item>
+    </string-array>
+
+    <!-- Settings > Player: player choice -->
+    <string name="zayn_player_choice_category">Player</string>
+    <string name="zayn_player_choice_title">Play videos with</string>
+    <string name="zayn_player_choice_internal">Zayn Play player (built-in)</string>
+    <string name="zayn_player_choice_external">External player</string>
+    <string name="zayn_external_player_title">External player app</string>
+    <string name="zayn_external_player_summary">Used when \"External player\" is chosen above</string>
+    <string name="zayn_external_player_not_found">That player is not installed; Zayn Play will use the built-in player until it is installed. Your choice is still saved.</string>
+
+    <string-array name="zayn_player_choice_names">
+        <item>@string/zayn_player_choice_internal</item>
+        <item>@string/zayn_player_choice_external</item>
+    </string-array>
+    <string-array name="zayn_player_choice_values">
+        <item>internal</item>
+        <item>external</item>
+    </string-array>
+    <string-array name="zayn_external_player_names">
+        <item>VLC</item>
+        <item>MX Player</item>
+        <item>JustPlayer</item>
+    </string-array>
+    <string-array name="zayn_external_player_values">
+        <item>org.videolan.vlc</item>
+        <item>com.mxtech.videoplayer.ad</item>
+        <item>com.brouken.player</item>
+    </string-array>
+
+    <!-- Settings > Providers: Test all providers (Zayn) -->
+    <string name="zayn_test_all_providers_title">Test all providers (Zayn)</string>
+    <string name="zayn_test_all_providers_summary">Tests every enabled provider: load, content and video. Providers whose video test fails are turned off automatically.</string>
+    <string name="zayn_test_all_running">Testing providers…</string>
+    <string name="zayn_test_all_none">No providers installed to test.</string>
+    <string name="zayn_test_all_results_title">Provider test results</string>
+    <string name="zayn_test_all_done">Tested %1$d providers, %2$d failed video and were turned off.</string>
+    <string name="zayn_test_all_auto_off">auto-off</string>
+</resources>
