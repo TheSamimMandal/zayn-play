@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Zayn Play player strings. All strings added by the player redesign live here;
+     values/strings.xml is untouched. -->
+<resources>
+    <!-- Bottom bar button labels (value is appended at runtime as "Label • value") -->
+    <string name="zayn_player_server">Server</string>
+    <string name="zayn_player_audio">Audio</string>
+    <string name="zayn_player_subtitles">Subtitles</string>
+    <string name="zayn_player_speed">Speed</string>
+    <string name="zayn_player_resolution">Resolution</string>
+    <string name="zayn_player_aspect">Aspect</string>
+
+    <!-- "Label • value" button text, e.g. "Server • VidCloud 1080p" -->
+    <string name="zayn_player_button_value_format" formatted="true">%1$s • %2$s</string>
+
+    <!-- Resolution dialog -->
+    <string name="zayn_player_resolution_title">Resolution</string>
+    <string name="zayn_player_resolution_auto">Auto</string>
+
+    <!-- Audio dialog title reuses the existing audio_tracks string; subtitle dialog
+         title reuses the existing pick_subtitle string. -->
+
+    <!-- Shown when no subtitle / audio value is available -->
+    <string name="zayn_player_value_off">Off</string>
+    <string name="zayn_player_value_unknown">—</string>
+
+    <!-- Buffering overlay: shown under the spinner while buffering -->
+    <string name="zayn_player_buffering">Buffering…</string>
+
+    <!-- Always-visible player watermark, bottom-right corner -->
+    <string name="zayn_player_watermark">ZAYN PLAY</string>
+
+    <!-- Gesture pill: volume / brightness percent -->
+    <string name="zayn_player_gesture_percent_format" formatted="true">%1$d%%</string>
+</resources>
